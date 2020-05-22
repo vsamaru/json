@@ -1,0 +1,10 @@
+* {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.json-viewer {
+  width: 480px;
+  display: block;
+  position: relative;
+}

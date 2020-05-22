@@ -1,0 +1,31 @@
+.primitive-viewer {
+  position: relative;
+}
+
+.primitive-viewer:hover .copy-json-viewer {
+  display: flex;
+}
+
+.primitive-viewer {
+  display: flex;
+}
+
+.primitive-viewer .primitive-viewer__label,
+.primitive-viewer .primitive-viewer__value {
+  line-height: 28px;
+}
+
+.primitive-viewer .primitive-viewer__label {
+  color: #222222;
+}
+
+.primitive-viewer .primitive-viewer__label::after {
+  content: ":";
+}
+
+.primitive-viewer .primitive-viewer__value {
+  color: #5e14d1;
+  text-align: justify;
+  padding-left: 5px;
+  word-break: break-word;
+}

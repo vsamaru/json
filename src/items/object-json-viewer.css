@@ -1,0 +1,59 @@
+.object-viewer {
+  display: flex;
+}
+
+.object-viewer .object-viewer__label:hover > .copy-json-viewer {
+  display: flex;
+}
+
+.object-viewer .object-viewer__label {
+  position: relative;
+  flex: 2;
+}
+
+.object-viewer .counter-viewer,
+.object-viewer .object-viewer__label {
+  color: #424242;
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+  line-height: 28px;
+}
+
+.object-viewer .object-viewer__label::before {
+  content: " ";
+  margin-top: 10px;
+  width: 0;
+  height: 0;
+  border-top: 4.5px solid transparent;
+  border-bottom: 4.5px solid transparent;
+  border-left: 8px solid red;
+  transition: transform 0.5s ease-in-out;
+  margin-right: 5px;
+}
+
+.object-viewer.expanded > .object-viewer__label::before {
+  transform: rotate(90deg);
+  margin-top: 13px;
+}
+
+.object-viewer .counter-viewer {
+  padding-left: 5px;
+  color: rgb(170, 165, 165);
+}
+
+.object-viewer > .object-viewer__label .counter-viewer::before {
+  content: "{";
+}
+
+.object-viewer > .object-viewer__label .counter-viewer::after {
+  content: "}";
+}
+
+/*
+.object-viewer .object-viewer__children {
+  border-left: 1px solid red;
+  padding-left: 20px;
+  margin-left: 6px;
+}
+*/
